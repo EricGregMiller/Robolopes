@@ -1,0 +1,6 @@
+MIDlet-Name: Robolopes2339Robot
+MIDlet-Version: 1.0.0
+MIDlet-Vendor: FIRST
+MIDlet-1: Robolopes2339Robot, , org.avhsd.robolopes._2102.sample.command.Robolopes2339Robot
+MicroEdition-Profile: IMP-1.0
+MicroEdition-Configuration: CLDC-1.1
