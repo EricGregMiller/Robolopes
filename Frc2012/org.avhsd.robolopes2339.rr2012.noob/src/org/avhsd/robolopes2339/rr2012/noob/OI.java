@@ -13,11 +13,11 @@ import edu.wpi.first.wpilibj.buttons.JoystickButton;
  */
 public class OI {
 	private Joystick joystick = new Joystick(RobotMap.joystickPort);
-	private Button shoot = new JoystickButton(joystick, 1), 
-				   ballCollect = new JoystickButton(joystick, 3), 
-				   ballEject = new JoystickButton(joystick, 6), 
-				   rampLeverDown = new JoystickButton(joystick, 4), 
-				   rampLeverUp = new JoystickButton(joystick, 5);
+	private Button shoot = new JoystickButton(joystick, RobotMap.buttonShoot), 
+				   ballCollect = new JoystickButton(joystick, RobotMap.buttonBallCollect), 
+				   ballEject = new JoystickButton(joystick, RobotMap.buttonBallEject), 
+				   rampLeverDown = new JoystickButton(joystick, RobotMap.buttonRampLeverDown), 
+				   rampLeverUp = new JoystickButton(joystick, RobotMap.buttonRampLeverUp);
 	
 	public Joystick getJoystick() {
 		return joystick;

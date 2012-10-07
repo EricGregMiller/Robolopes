@@ -47,6 +47,16 @@ public class RobotMap {
     public static final int
             joystickPort = 1;
 
+	/*
+	 * map for joystick buttons 
+	 */
+    public static final int
+            buttonShoot = 1,
+            buttonBallCollect = 3,
+            buttonBallEject = 6,
+            buttonRampLeverDown = 4,
+            buttonRampLeverUp = 5;
+
 
 	/*
 	 * map for analog module breakout channels 1 - 8 

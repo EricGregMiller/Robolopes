@@ -2,7 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
-	<classpathentry kind="lib" path="C:/Users/emiller/Documents/iTest/Eclipse/3.6.1/win32.win32.x86/eclipse/plugins/edu.wpi.first.javadev.sunspotfrcsdk_1.0.7.1/sunspotfrcsdk/lib/WPILibJ/classes.jar"/>
-	<classpathentry kind="lib" path="C:/Users/emiller/Documents/iTest/Eclipse/3.6.1/win32.win32.x86/eclipse/plugins/edu.wpi.first.javadev.sunspotfrcsdk_1.0.7.1/sunspotfrcsdk/lib/squawk_device.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Eclipse Juno 4.2/plugins/edu.wpi.first.javadev.sunspotfrcsdk_1.0.7.1/sunspotfrcsdk/lib/WPILibJ/classes.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Eclipse Juno 4.2/plugins/edu.wpi.first.javadev.sunspotfrcsdk_1.0.7.1/sunspotfrcsdk/lib/squawk_device.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
