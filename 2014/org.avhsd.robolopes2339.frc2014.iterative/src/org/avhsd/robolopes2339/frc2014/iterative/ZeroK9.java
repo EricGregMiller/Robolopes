@@ -20,7 +20,7 @@ import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.DriverStationEnhancedIO;
 import edu.wpi.first.wpilibj.DriverStationEnhancedIO.EnhancedIOException;
 import edu.wpi.first.wpilibj.IterativeRobot;
-import edu.wpi.first.wpilibj.Talon;
+import edu.wpi.first.wpilibj.Victor;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Relay;
 import edu.wpi.first.wpilibj.RobotDrive;
@@ -65,7 +65,7 @@ public class ZeroK9 extends IterativeRobot {
     // Only need this if using Tank drive
     private final Joystick driveStickRight = new Joystick(2);
     // Third joystick for shooter and lift control
-    private final Joystick operatorStick = new Joystick(3);
+    private final Joystick operatorStick = new Joystick(2);
     
     // Class to interact with driver station
     private final DriverStationEnhancedIO driverStation = DriverStation.getInstance().getEnhancedIO();
@@ -73,10 +73,10 @@ public class ZeroK9 extends IterativeRobot {
     /*
      * Initialize motor controllers.
      */
-    private final Talon m_frontLeft = new Talon(1);
-    private final Talon m_frontRight= new Talon(2);
-    private final Talon m_rearLeft  = new Talon(3);
-    private final Talon m_rearRight = new Talon(4);
+    private final Victor m_frontLeft = new Victor(1);
+    private final Victor m_frontRight= new Victor(2);
+    private final Victor m_rearLeft  = new Victor(3);
+    private final Victor m_rearRight = new Victor(4);
     
     /*
      * Initialize robot drive to match our controllers
@@ -110,10 +110,10 @@ public class ZeroK9 extends IterativeRobot {
      * Initialize shooter motor data
      * Numbers are control channels of shooter motors
      */
-    private final Talon shooterMotorA = new Talon(5);
-    private final Talon shooterMotorB = new Talon(6);
+    private final Victor shooterMotorA = new Victor(5);
+    private final Victor shooterMotorB = new Victor(6);
     private final Joystick shooterJoystick = operatorStick;
-    private final int shooterMotorLoadButton = 8;
+    private final int shooterMotorLoadButton = 10;
     DigitalInput shooterStopSwitch = new DigitalInput(2);
     private boolean currentLoaderMode = false;
     private long shootButtonTime = 0;
@@ -130,8 +130,8 @@ public class ZeroK9 extends IterativeRobot {
      * Initialize claw motor data
      * Numbers are control channels of claw motors
      */
-    private final Talon clawMotorA = new Talon(7);
-    private final Talon clawMotorB = new Talon(8);
+    private final Victor clawMotorA = new Victor(7);
+    private final Victor clawMotorB = new Victor(8);
     private final Joystick clawJoystick = operatorStick;
     private final int clawMotorButtonGrab = 3;
     private final int clawMotorButtonRelease = 4;
